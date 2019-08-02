@@ -1,0 +1,689 @@
+/*
+Theme Name: Fuse Digital
+Description: A <a href='https://fusedigital.ca'>Custom Theme - Fuse Digital</a>
+Version: 1.0
+Author: Fuse Team
+Author URI: https://fusedigital.ca
+Template: enfold
+*/
+
+/*Add your own styles here:*/
+
+/* headings */
+
+h2{
+	letter-spacing: 0px !important;
+}
+
+h4{
+	letter-spacing: 0.3em;
+}
+
+.avia-image-overlay-wrap a.avia_image .image-overlay:hover{
+	opacity: 0.25 !important;
+	background: #000;
+}
+
+.avia-image-overlay-wrap a.avia_image .image-overlay{
+	opacity: 0.!important;
+	background: #000;
+}
+
+#fd-easy-slider{
+}
+
+.fd-no-animation{
+
+}
+
+.fd-no-visibility{
+}
+
+
+/*
+
+.top-parent-14 .notransition * { 
+  -webkit-transition: none !important; 
+  -moz-transition: none !important; 
+  -o-transition: none !important; 
+  -ms-transition: none !important; 
+  transition: none !important; 
+} 
+
+/* 
+#top .avia-slideshow-inner [class*="slide-"]{
+    opacity: 1 !important;
+}
+
+
+
+.white-75 .avia-image-overlay-wrap a.avia_image .image-overlay:hover{
+	opacity: 0.75 !important;
+}
+
+.white-50 .avia-image-overlay-wrap a.avia_image .image-overlay:hover{
+	opacity: 0.50 !important;
+}
+
+.white-25 .avia-image-overlay-wrap a.avia_image .image-overlay:hover{
+	opacity: 0.25 !important;
+}
+
+.black-75 .avia-image-overlay-wrap a.avia_image .image-overlay:hover{
+	opacity: 0.75 !important;
+	background: #000;
+}
+
+.black-50 .avia-image-overlay-wrap a.avia_image .image-overlay:hover{
+	opacity: 0.50 !important;
+	background: #000;
+}
+
+.black-25 .avia-image-overlay-wrap a.avia_image .image-overlay:hover{
+	opacity: 0.25 !important;
+	background: #000;
+}
+
+*/
+
+
+/* Style Gravity Forms */
+
+
+#top label{
+	font-size: 13px;
+	font-weight: 900;
+	letter-spacing: 0.3em;
+}
+
+/* Change font of Placeholder */
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	font-family: Arapey !important;
+	color: #acacac !important;
+	font-style: italic;
+	font-size: 14px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+ 	font-family: Arapey !important;
+	color: #acacac !important;
+	font-style: italic;
+	font-size: 14px;
+}
+:-ms-input-placeholder { /* IE 10+ */
+	font-family: Arapey !important;
+	color: #acacac !important;
+	font-style: italic;
+	font-size: 14px;
+}
+:-moz-placeholder { /* Firefox 18- */
+	font-family: Arapey !important;
+	color: #acacac !important;
+	font-style: italic;
+	font-size: 14px;
+}
+
+
+/* add bottom border for input field */
+.gform_body input[type='text']{
+	border-width:0px !important;
+	border-bottom-width:1px !important;
+	padding-left: 0px !important;
+
+}
+
+.gform_body input[type='text']:focus{
+	padding-left: 6px !important;
+}
+
+
+
+
+/* style text area */
+
+.gform_body textarea{
+	border-width:0px !important;
+	border-bottom-width:1px !important;
+	min-height: unset!important;
+	height: 2.5em !important;
+	line-height: 1em;
+	padding: 3px 3px 3px 0px !important;
+    transition: all 0.5s ease;
+}
+
+.gform_body textarea:focus{
+	height: 12em !important;
+	padding-left: 6px!important;
+	outline: none!important;
+}
+
+/* Button sTYLING*/
+#top input[type='submit'],
+#top .avia-button-wrap .avia-button{
+	border-style:solid;
+	border-width:2px !important;
+	background-color:#ffffff !important;
+	color: #000000 !important;
+	text-transform:uppercase;
+	letter-spacing: 4px;
+	height: 50px;
+}
+
+/* Button hover*/
+#top input[type='submit']:hover,
+#top .avia-button-wrap .avia-button:hover{
+	background-color:#000000 !important;
+	color: #ffffff !important;
+	-webkit-transition: all 0s ease-out !important;
+	transition: all 0s ease-out !important;
+}
+
+/* Page top margin 
+.container .template-page{
+	margin-top: 50px;
+}
+
+*/
+
+/* Custom Accordion Icon */
+.page-id-20 .single_toggle p.toggler:first-child,
+.page-id-669 .single_toggle p.toggler:first-child{
+	font-size: 13px !important;
+	font-weight: 900;
+	letter-spacing: 0.3em;
+}
+
+.page-id-20 .single_toggle p.activeTitle,
+.page-id-669 .single_toggle p.activeTitle{
+	border-bottom: none;
+}
+
+.toggle_icon {
+    display: inline-block!important;
+	border-radius: 0px !important;
+	border-width: 0px !important;
+}
+.toggle_icon:before {
+	padding-top: 6px;
+    font-family: Arapey !important; 
+    content: 'open +';  
+    position: absolute;
+    font-style: italic;
+	font-weight: normal;
+	width: 60px;
+	font-size: 14px;
+	letter-spacing: 0px !important;
+}
+
+.activeTitle .toggle_icon:before {
+	padding-top: 6px;
+	font-family: Arapey !important;   
+    content: 'close -'; 
+    position: absolute;
+    font-style: italic;
+	width: 60px;
+	font-size: 14px;
+	font-weight: normal;
+	letter-spacing: 0px !important;
+}
+
+.toggle_icon span {
+    display: none;
+}
+
+/* Hide Image overlay */
+.avia-image-overlay-wrap span.image-overlay-inside:before{
+	display: none;
+}
+
+/* Hide scroll bar*/
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+/* Easy Slider */
+.avia-slideshow, .avia-slideshow * {
+	overflow: visible !important;
+}
+
+.page-child .avia-slide-wrap{
+	margin: 0 auto;
+	display: table;
+}
+
+.page-child .avia-slideshow li img {
+	max-height: 70vh!important;
+	width: auto;
+}
+
+
+.avia-caption { 
+	all: unset;
+	bottom: -70px !important; 
+	float: left;
+    display: inline-block;
+    position: absolute;
+	top: 100%;
+	
+}
+
+.avia-slideshow .avia-caption .avia-caption-title{
+	color: #000;
+	background: none;
+	display: inline;
+	padding: 0px !important;
+	font-size: 13px !important;
+	letter-spacing: 0.3em !important;
+	text-transform: uppercase !important;
+}
+
+.avia-slideshow .avia-caption .avia-caption-content{
+	color: #000;
+	display: inline;
+	padding: 0px !important;
+}
+.avia-slideshow .avia-caption .avia-caption-content p{
+	background: none;
+	font-style: italic;
+	margin-bottom: 20px;
+	font-family: Arapey !important;
+	font-size: 14px;
+}
+
+.next-slide { 
+	right: -100px !important; 
+}
+
+.prev-slide { 
+	left: -100px !important; 
+}
+
+#top .av-control-minimal .avia-slideshow-arrows a:before{
+	border: 0px;
+}
+
+#top .av-control-minimal-dark .avia-slideshow-dots a.active{
+	background: none;
+}
+
+#top .av-control-minimal-dark .avia-slideshow-dots a{
+	background: none;
+	border: 0px;
+	text-indent: 0px;
+}
+
+#top .av-control-minimal .avia-slideshow-dots a{
+	padding: 0px;
+}
+
+
+#top .av-control-minimal .avia-slideshow-dots{
+	bottom: -30px !important; 
+	position: relative;
+	right: 0px;
+	padding: 0;
+}
+
+.avia-slideshow-arrows.avia-slideshow-controls a,
+.avia-slideshow-dots.avia-slideshow-controls a{ 
+	opacity: 1!important; 
+}
+
+.avia-slideshow-dots .goto-slide{
+	display: none !important;
+}
+
+.avia-slideshow-dots span.new{
+	display: inline !important;
+	position: relative;
+	float: right;
+	right: 2.9em;
+	width: 8px;
+}
+
+.avia-slideshow-dots .goto-slide-last{
+	position: relative;
+	float: right;
+	left: 5px;
+}
+
+.goto-slide { 
+	padding-top: 3px;
+	font-size: 12px;
+}
+
+.goto-slide-last { 
+	padding-top: 3px;
+	font-size: 12px;
+}
+
+
+/* Work Description page button position */
+.work-page-title{
+	margin-top: 15px;
+}
+
+
+
+/* Home Page 4 */
+.page-id-386 .avia-slideshow li img {
+	max-height: 640px !important;
+	width: auto;
+}
+
+
+.page-id-386 .content{
+	padding-top: 30px !important;
+	padding-bottom: 30px !important;
+}
+
+
+/* news page */
+.page-id-18 .column-top-margin{
+	margin-top: 0px;
+}
+
+/* about page*/
+a.fd-download{
+	font-size: 13px;
+	letter-spacing: 0.3em;
+	font-weight: bold;
+}
+
+/* work page button */
+div.work-page-button {
+		height: 50px;
+}
+
+div.work-page-button .avia-button.avia-size-medium{
+	padding: 15px 16px;
+}
+
+/* footer display */
+
+#footer{
+	margin-top: 50px;
+}
+
+#footer .widget .fd-footer-outer{
+	margin-left: 0px;
+	position: relative;
+}
+
+
+#footer .widget .fd-footer-dsimg,
+#footer .widget .fd-footer-divider,
+#footer .widget .fd-footer-img{
+	display: inline;
+}
+
+#footer .widget .fd-footer-divider{
+	font-size: 30px;
+	position: relative;
+  	top: -2px;
+	margin-right: 15px;
+	margin-left: 15px;
+	color: #acacac;
+	font-weight: 100;
+}
+
+#footer .widget .fd-footer-dsimg{
+	position: relative;
+	top: -1px;
+}
+
+#footer .widget .fd-footer-dsimg img{
+	height: 22px;
+}
+
+#footer .widget .fd-footer-img{
+	position: relative;
+	top: 10px;
+}
+
+#footer .widget .fd-footer-img img{
+	height: 36px;
+}
+
+#footer .widget .fd-footer-credit{
+	color: #acacac;
+	font-size: 12px;
+	font-family: Arapey !important;
+	float: right;
+	margin-top: 15px;
+}
+
+/* books page */
+.books-page-2nd-button{
+	margin-left: 25px!important;
+}
+
+
+/* Screen size bigger than 1921 px*/
+
+@media only screen and (min-width: 1921px) {
+
+/* increase gallery image size */
+	.page-child .avia-slideshow li img {
+		max-height: 80vh!important;
+		width: auto;
+	}
+	
+/* Child page of Work Image Size 
+	.parent-pageid-14 img.avia_image{
+		max-height: 80vh!important;
+		width: auto;
+	}
+	
+*/
+
+}
+
+
+/* Screen size bigger than 768 px*/
+
+@media only screen and (min-width: 1082px) {
+	
+	.page-id-14 div.av_one_third{
+		margin: 0 1em 1em 1em;
+	}
+	
+	
+}
+
+
+/* Screen size bigger than 768 px and smaller than 1081*/
+
+@media only screen and (min-width: 768px) and (max-width: 1081px){
+	
+	.page-id-14 div.av_one_third{
+		margin: 0 0.5em 0.5em 0.5em;
+	}
+	
+}
+
+/* Screen size upto 1081 px */
+@media only screen and (max-width: 1081px) {
+	/* display mobile menu with screen size lower than 1080 px */
+	.av-burger-menu-main { 
+		 display: block!important; 
+	}
+	#top .av-main-nav .menu-item {
+		 display: none!important;
+	}
+	
+	#top .av-burger-overlay li a{
+		width: 80%;
+		float: right;
+		right: 50px;
+		padding: 15px 0px!important;
+	}
+	
+	#top #av-burger-menu-ul{
+		vertical-align: baseline !important;
+	}
+}
+
+
+/* Screen size upto 767 px */
+@media only screen and (max-width: 767px) {
+	
+	/* Work Description page button position */
+	div.work-page-button {
+		float: left !important;
+	}
+	
+	/* mobile Menu */
+	#top .av-burger-overlay li a{
+		width: 80%;
+		right: 30px;
+	}
+	
+	/* footer display */
+	
+	.home #footer .flex_column:nth-child(3){
+		display: none !important;
+	}
+	
+	#footer .widget{
+		margin:0px;
+	}
+	
+	#footer .widget .fd-footer-outer{
+		display: flex;
+		align-items: center;
+		justify-content: center; 
+		margin-top: 30px;
+	}
+	
+	#footer .widget .fd-footer-img{
+		top: 5px;
+	}
+	
+	#footer .widget .fd-footer-dsimg{
+      	position: relative;
+    	top: 3px;
+  	}
+  
+	#footer .widget .fd-footer-img img{
+		height: 24px;
+	}
+  
+ 	#footer .widget .fd-footer-dsimg img{
+		height: 15px;
+	}
+	
+	#footer .widget .fd-footer-divider{
+		font-size: 18px;
+		top: 0;
+	}
+	
+	#footer .widget .fd-footer-credit{
+		float: unset;
+		text-align: center;
+		margin-top: 0px;
+	}
+	
+	
+
+	/* silde show */
+	.avia-slideshow .avia-caption .avia-caption-title{
+		padding: 0px !important;
+		font-size: 15px;
+	}
+
+	.avia-slideshow .avia-caption .avia-caption-content{
+		padding: 0px !important;
+		font-size: 13px;
+	}
+	
+	.responsive #top .avia-slideshow-controls a {
+		display: inline;
+	}
+	
+	
+	.next-slide { 
+		right: -50px !important; 
+	}
+
+	.prev-slide { 
+		left: -50px !important; 
+	}
+	
+	#top .avia-slideshow-arrows a{
+		width:30px;
+		height: 30px;
+		line-height: 32px;
+		font-size: 20px;
+	}
+	
+	#top .av-control-minimal .avia-slideshow-arrows a:before{
+		line-height: 30px;
+	}
+	
+	#top .av-control-minimal .avia-slideshow-dots{
+		bottom: -55px !important;
+	}
+	
+}
+
+
+/* Screen size upto 480 px */
+@media only screen and (max-width:480px) {
+	/* silde show */
+	.next-slide { 
+		right: -42px !important; 
+	}
+
+	.prev-slide { 
+		left: -42px !important; 
+	}
+	
+	#top .avia-slideshow-arrows a{
+		width:25px;
+		height: 25px;
+		line-height: 28px;
+		font-size: 22px;
+	}
+	
+	#top .av-control-minimal .avia-slideshow-arrows a:before{
+		line-height: 25px;
+	}
+	
+		/* mobile Menu */
+	#top .av-burger-overlay li a{
+		width: 80%;
+		right: 25px;
+	}
+	
+	/*books page design */
+	.books-page-2nd-button{
+		display: block;
+		margin-left: 0px!important;
+	}
+}
+
+
+/* Screen size upto 480 px */
+@media only screen and (max-width:480px) {
+	.toggle_icon:before {
+		content: '\a0\a0\a0\a0\a0\a0+';  
+	}
+
+	.activeTitle .toggle_icon:before {
+		content: '\a0\a0\a0\a0\a0\a0-'; 
+
+	}
+
+/* About page mobile padding for Acordian */
+	.page-id-20 .togglecontainer .toggler {
+		padding-right: 25px !important;
+	}
+
+}
